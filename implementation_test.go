@@ -21,7 +21,7 @@ func TestCalculatePostfix(t *testing.T) {
 		{"6 2 ^ 9 / 1 * 2 3 * - 3 + 8 +", 9, nil},
 		{"15&*", 0, errors.New("Invalid element of expression.")},
 		{"", 0, errors.New("Expression is not complete.")},
-		{"+ 5 6", 0, errors.New("Expression is wrong.")},
+		{"+ 5 6 7", 0, errors.New("Expression is wrong.")},
 
 	}
 
